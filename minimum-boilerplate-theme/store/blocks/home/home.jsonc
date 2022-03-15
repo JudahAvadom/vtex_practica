@@ -1,0 +1,57 @@
+{
+  "store.home": { 
+    "blocks": [
+      "responsive-layout.desktop",
+      "slider-layout#promos"
+    ]
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "image#example"
+    ]
+  },
+  "image#example": {
+    "props": {
+      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/4d631a63-8b4a-48cf-9a6f-dcf2bece617f___2924353a3fe0b13c0477d8716892f40a.jpg"
+    }
+  },
+  "slider-layout#promos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "fullWidth": false
+    },
+    "children": [
+      "image#pomo--one",
+      "image#pomo--two",
+      "image#pomo--three",
+      "image#pomo--four"
+    ]
+  },
+  "image#pomo--one": {
+    "props": {
+      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/ac951ced-6bc2-48c3-bded-2da099a4d352___c96bdcf3a8c9739f1e8c10791a0eeb83.png"
+    }
+  },
+  "image#pomo--two": {
+    "props": {
+      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/e0f632ed-4b1e-4589-9bd9-07770da99763___ce7fb17d0f6e61b3979f78190e90b1fc.jpg"
+    }
+  },
+  "image#pomo--three": {
+    "props": {
+      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/a3fe489a-f40f-4133-8924-2cc3e05cd090___11a7b0b35621e41a6a85591089b9f3fd.jpg"
+    }
+  },
+  "image#pomo--four": {
+    "props": {
+      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/e135b4cc-b2c2-4205-bc86-bf792312e4e5___ee5bc30db5a54238166564d1ce4e077b.jpg"
+    }
+  }
+}

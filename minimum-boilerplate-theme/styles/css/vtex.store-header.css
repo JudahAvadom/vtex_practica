@@ -1,0 +1,20 @@
+:global(.vtex-flex-layout-0-x-flexRow) {
+    background-color: #192e36 !important;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent) {
+    color: #fff !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    background-color: #e2001a !important;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+    width: 155vh;
+    border-radius: 50%;
+}
+
+.searchBarIcon {
+    color: aqua;
+}

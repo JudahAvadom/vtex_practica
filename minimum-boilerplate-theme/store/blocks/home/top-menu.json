@@ -1,0 +1,84 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/shop",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "La deducción que aplica a la presente venta, corresponde a la exención establecida en la Ley 2155 de 14 de septiembre de 2021,NO es una promoción"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-website"
+    ]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#top": {
+    "children": [
+      "menu-item#venta__telefonica",
+      "menu-item#atencion__cliente"
+    ]
+  },
+  "menu-item#venta__telefonica": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "text": "Venta Telefonica"
+      }
+    }
+  },
+  "menu-item#atencion__cliente": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "text": "Atención al cliente"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#tarjeta": {
+    "children": [
+      "menu-item#viajar",
+      "menu-item#tarjeta"
+    ]
+  },
+  "menu-item#viajar": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "text": "Viajar Olimpica"
+      }
+    }
+  },
+  "menu-item#tarjeta": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "text": "| Tarjeta Olimpica"
+      }
+    }
+  }
+}

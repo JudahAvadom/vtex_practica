@@ -1,10 +1,37 @@
 {
   "store.product": {
     "children": [
-      "flex-layout.row#main"
+      "flex-layout.row#product"
     ]
   },
-  "flex-layout.row#main": {
-    
+  "flex-layout.row#product": {
+    "children": [
+      "vtex.product-list:product-name",
+      "product-price",
+      "product-images",
+      "product-description"
+    ]
+  },
+  "vtex.product-list:product-name": {
+    "props": {
+      "showSku": true,
+      "showBrandName": true
+    }
+  },
+  "product-price": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": false
+    }
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
+  },
+  "product-description": {
+    "props": {
+      "showDescription": true
+    }
   }
 }
