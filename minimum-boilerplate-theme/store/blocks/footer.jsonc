@@ -4,20 +4,17 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-desktop"
+      "flex-layout.row#1-footer",
+      "flex-layout.row#2-footer"
     ]
   },
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#footer-mobile"
+      "flex-layout.row#1-footer",
+      "flex-layout.row#2-footer"
     ]
   },
-  "flex-layout.row#footer-desktop": {
-    "children": [
-      "rich-text#ayuda"
-    ]
-  },
-  "flex-layout.row#footer-mobile": {
+  "flex-layout.row#1-footer": {
     "children": [
       "rich-text#ayuda"
     ]
@@ -25,7 +22,18 @@
   "rich-text#ayuda": {
     "props": {
       "text": "¿NECESITAS AYUDA?",
-      "textColor": "#000"
+      "textColor": "c-on-muted-3"
+    }
+  },
+  "flex-layout.row#2-footer": {
+    "children": [
+      "rich-text#direccion"
+    ]
+  },
+  "rich-text#direccion": {
+    "props": {
+      "text": "Barranquilla: 371 01 23",
+      "textColor": "c-on-muted-3"
     }
   }
 }

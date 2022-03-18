@@ -1,0 +1,12 @@
+.autoCompleteOuterContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: red;
+    font-weight: 600;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer) {
+    padding: 10px;
+}
+
+.vtex-store-footer-2-x-footerLayout :global(.vtex-rich-text-0-x-wrapper) {
+    font-size: 12px !important;
+}
