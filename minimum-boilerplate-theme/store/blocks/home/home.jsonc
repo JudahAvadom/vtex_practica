@@ -1,29 +1,31 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "responsive-layout.desktop",
-      "slider-layout#promos",
-      "slider-layout#catalogo",
-      "image#promo--one"
-    ]
-    
-  },
-  "responsive-layout.desktop": {
-    "children": [
-      "image#example"
+      "list-context.image-list#demo",
+      "flex-layout.row#shelf",
+      "list-context.image-list#promo--one",
+      "list-context.image-list#promo--two",
+      "newsletter"
     ]
   },
-  "image#example": {
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
     "props": {
-      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/4d631a63-8b4a-48cf-9a6f-dcf2bece617f___2924353a3fe0b13c0477d8716892f40a.jpg"
+      "height": 720,
+      "images": [
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/f2ffbf37-fe58-411e-bbf8-b5448bcf32df___f1f04bf7ca361377b44bd7e2f26fd654.jpg",
+          "mobileImage": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/f2ffbf37-fe58-411e-bbf8-b5448bcf32df___f1f04bf7ca361377b44bd7e2f26fd654.jpg"
+        },
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/e8e4e67a-e80f-4725-9972-a7b159203e2f___7e6971db9fb44392b1818507ab062712.jpg",
+          "mobileImage": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/e8e4e67a-e80f-4725-9972-a7b159203e2f___7e6971db9fb44392b1818507ab062712.jpg"
+        }
+      ]
     }
   },
-  "image#promo--one": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/903bd1a1-b979-4493-9fcd-7993b780e10a___fd7f981ac3b16135188bc044d34fd694.jpg"
-    }
-  },
-  "slider-layout#promos": {
+  "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -31,105 +33,67 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "fullWidth": false
-    },
-    "children": [
-      "image#pomo--one",
-      "image#pomo--two",
-      "image#pomo--three",
-      "image#pomo--four"
-    ]
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
   },
-  "slider-layout#catalogo": {
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"],
+    "props": {
+      "blockClass": "white"
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 8,
-        "tablet": 8,
-        "phone": 8
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
       },
-      "infinite": false,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "list-context.image-list#promo--one": {
+    "children": ["slider-layout#promo--one"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/9ea00800-8ab0-4762-90bd-71bc9bab8a52___2a7d772f9a550c440b8d50de6b0dbf80.jpg"
+        },
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/fde4b77d-72f6-4e75-ae4d-f30489bad17b___342e2330defbc886dc9d695e23031dda.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#promo--one": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
       "fullWidth": false
-    },
-    "children": [
-      "image#catalogo--one",
-      "image#catalogo--two",
-      "image#catalogo--three",
-      "image#catalogo--four",
-      "image#catalogo--five",
-      "image#catalogo--six",
-      "image#catalogo--seven",
-      "image#catalogo--eight",
-      "image#catalogo--nine"
-    ]
-  },
-  "image#pomo--one": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/ac951ced-6bc2-48c3-bded-2da099a4d352___c96bdcf3a8c9739f1e8c10791a0eeb83.png"
     }
   },
-  "image#pomo--two": {
+  "list-context.image-list#promo--two": {
     "props": {
-      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/e0f632ed-4b1e-4589-9bd9-07770da99763___ce7fb17d0f6e61b3979f78190e90b1fc.jpg"
-    }
-  },
-  "image#pomo--three": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/a3fe489a-f40f-4133-8924-2cc3e05cd090___11a7b0b35621e41a6a85591089b9f3fd.jpg"
-    }
-  },
-  "image#pomo--four": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/e135b4cc-b2c2-4205-bc86-bf792312e4e5___ee5bc30db5a54238166564d1ce4e077b.jpg"
-    }
-  },
-  "image#catalogo--one": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_deporte.png",
-      "title": "DEPORTES"
-    }
-  },
-  "image#catalogo--two": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/categoria-muebles.jpg"
-    }
-  },
-  "image#catalogo--three": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_hogar.png"
-    }
-  },
-  "image#catalogo--four": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_jugueteria.png"
-    }
-  },
-  "image#catalogo--five": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_lavadora.png"
-    }
-  },
-  "image#catalogo--six": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_llanta.png"
-    }
-  },
-  "image#catalogo--seven": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_tv.png"
-    }
-  },
-  "image#catalogo--eight": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_videojuego.png"
-    }
-  },
-  "image#catalogo--nine": {
-    "props": {
-      "src": "https://olimpica.vtexassets.com/arquivos/icon_supermercado.png"
+      "images": [
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/801f6c18-3bbf-4455-9b2d-37ec20d53a7d___3cb2befba82351d3256ce8d85d4e7cd6.jpg"
+        }
+      ]
     }
   }
 }

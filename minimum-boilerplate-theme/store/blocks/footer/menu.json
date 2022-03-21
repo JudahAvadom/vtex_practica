@@ -1,0 +1,370 @@
+{
+    "vtex.menu@2.x:menu#Products": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "image#logo",
+        "menu-item#news",
+        "menu-item#blackfriday",
+        "menu-item#sale"
+      ]
+    },
+    "image#logo": {
+      "props": {
+        "src": "https://olimpica.vtexassets.com/arquivos/Screenshot_10.png",
+        "maxHeight": 45,
+        "maxWidth": 156
+      }
+    },
+    "menu-item#news": {
+      "props": {
+        "id": "menu-item-news",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "News",
+          "text": "¿NECESITAS AYUDA?"
+        }
+      }
+    },
+    "menu-item#blackfriday": {
+      "props": {
+        "id": "menu-item-black-friday",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "BlackFriday",
+          "text": "Barranquilla: 371 01 23"
+        }
+      }
+    },
+    "menu-item#sale": {
+      "props": {
+        "id": "menu-item-sale",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Sale",
+          "text": "Resto del país: 01 8000 510 510"
+        }
+      }
+    },
+  
+    "vtex.menu@2.x:menu#footer-decoration": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#smartphones",
+        "menu-item#videogames",
+        "menu-item#tvs"
+      ]
+    },
+  
+    "menu-item#smartphones": {
+      "props": {
+        "id": "menu-item-smartphones",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/decoration/smartphones",
+          "noFollow": true,
+          "tagTitle": "CONTENIDO",
+          "text": "CONTENIDO"
+        }
+      }
+    },
+  
+    "menu-item#videogames": {
+      "props": {
+        "id": "menu-item-videogames",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/decoration/videogames",
+          "noFollow": true,
+          "tagTitle": "Sabores Olímpica",
+          "text": "Sabores Olímpica"
+        }
+      }
+    },
+  
+    "menu-item#tvs": {
+      "props": {
+        "id": "menu-item-tvs",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/decoration/tvs",
+          "noFollow": true,
+          "tagTitle": "Catálogos",
+          "text": "Catálogos"
+        }
+      }
+    },
+  
+    "vtex.menu@2.x:menu#footer-bags": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#bags",
+        "menu-item#backpacks",
+        "menu-item#necessaire"
+      ]
+    },
+  
+    "menu-item#bags": {
+      "props": {
+        "id": "menu-item-bags",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/bags/d",
+          "noFollow": true,
+          "tagTitle": "NUESTRA EMPRESA",
+          "text": "NUESTRA EMPRESA"
+        }
+      }
+    },
+  
+    "menu-item#backpacks": {
+      "props": {
+        "id": "menu-item-backpacks",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/bags/backpacks",
+          "noFollow": true,
+          "tagTitle": "Nuestras tiendas",
+          "text": "Nuestras tiendas"
+        }
+      }
+    },
+  
+    "menu-item#necessaire": {
+      "props": {
+        "id": "menu-item-necessaire",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/bags/necessaire",
+          "noFollow": true,
+          "tagTitle": "Domicilios",
+          "text": "Domicilios"
+        }
+      }
+    },
+  
+    "vtex.menu@2.x:menu#footer-clothing": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#clothing",
+        "menu-item#shorts",
+        "menu-item#tank-tops",
+        "menu-item#shirts",
+        "menu-item#sweatshirt",
+        "menu-item#cropped"
+      ]
+    },
+  
+    "vtex.menu@2.x:menu#footer-mobile": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#clothing-mobile",
+        "menu-item#decoration-mobile",
+        "menu-item#sale-mobile"
+      ]
+    },
+  
+    "menu-item#clothing-mobile": {
+      "props": {
+        "id": "menu-item-category-clothing",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/d",
+          "noFollow": true,
+          "tagTitle": "CATEGORÍAS",
+          "text": "Categorias"
+        }
+      },
+      "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+    },
+    "vtex.menu@2.x:submenu.accordion#clothing": {
+      "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+    },
+  
+    "vtex.menu@2.x:menu#clothing-accordion": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#shorts",
+        "menu-item#tank-tops",
+        "menu-item#shirts",
+        "menu-item#sweatshirt",
+        "menu-item#cropped"
+      ]
+    },
+  
+    "menu-item#decoration-mobile": {
+      "props": {
+        "itemProps": {
+          "tagTitle": "Decoration",
+          "text": "Decoration"
+        }
+      },
+      "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+    },
+    "vtex.menu@2.x:submenu.accordion#decoration": {
+      "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+    },
+  
+    "vtex.menu@2.x:menu#footer-decoration-mobile": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#smartphones",
+        "menu-item#videogames",
+        "menu-item#tvs"
+      ]
+    },
+  
+    "menu-item#sale-mobile": {
+      "props": {
+        "itemProps": {
+          "tagTitle": "Sale",
+          "text": "Sale"
+        }
+      },
+      "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+    },
+    "vtex.menu@2.x:submenu.accordion#sale": {
+      "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+    },
+  
+    "vtex.menu@2.x:menu#footer-sale-mobile": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#smartphones",
+        "menu-item#videogames",
+        "menu-item#tvs"
+      ]
+    },
+  
+    "menu-item#clothing": {
+      "props": {
+        "id": "menu-item-category-clothing",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/d",
+          "noFollow": true,
+          "tagTitle": "Clothing",
+          "text": "CATEGORÍAS"
+        }
+      }
+    },
+  
+    "menu-item#shorts": {
+      "props": {
+        "id": "menu-item-shorts",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/shorts",
+          "noFollow": false,
+          "tagTitle": "Electro hogar",
+          "text": "Electro hogar"
+        }
+      }
+    },
+  
+    "menu-item#tank-tops": {
+      "props": {
+        "id": "menu-item-tank-tops",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/tank-tops",
+          "noFollow": false,
+          "tagTitle": "TV, audio y video",
+          "text": "TV, audio y video"
+        }
+      }
+    },
+  
+    "menu-item#shirts": {
+      "props": {
+        "id": "menu-item-shirts",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/shirts",
+          "noFollow": false,
+          "tagTitle": "Tecnología y Celulares",
+          "text": "Tecnología y Celulares"
+        }
+      }
+    },
+  
+    "menu-item#sweatshirt": {
+      "props": {
+        "id": "menu-item-sweat-shirts",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/sweatshirt",
+          "noFollow": false,
+          "tagTitle": "Hogar",
+          "text": "Hogar"
+        }
+      }
+    },
+  
+    "menu-item#cropped": {
+      "props": {
+        "id": "menu-item-cropped",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/clothing/cropped",
+          "noFollow": false,
+          "tagTitle": "Juguetería",
+          "text": "Juguetería"
+        }
+      }
+    }
+  }

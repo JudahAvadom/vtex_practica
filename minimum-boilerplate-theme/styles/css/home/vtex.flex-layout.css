@@ -1,0 +1,8 @@
+:global(.vtex-flex-layout-0-x-flexRow--white) {
+    background-color: #fff !important;
+}
+:global(.vtex-slider-layout-0-x-slide--shelf) {
+    border: 1px solid #c3c3c3 !important;
+    border-radius: 10px;
+    margin: 10px;
+}

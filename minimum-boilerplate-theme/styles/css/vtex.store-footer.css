@@ -1,0 +1,9 @@
+:global(.vtex-store-components-3-x-imageElement) {
+    align-self: center;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) :global(.vtex-menu-2-x-styledLinkContent) {
+    font-size: 12px;
+    font-weight: 400;
+    color: #d9d9d9 !important;
+}
