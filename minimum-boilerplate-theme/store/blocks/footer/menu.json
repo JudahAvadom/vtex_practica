@@ -75,7 +75,6 @@
       "props": {
         "id": "menu-item-smartphones",
         "type": "custom",
-        "iconId": null,
         "highlight": false,
         "itemProps": {
           "type": "internal",

@@ -4,8 +4,8 @@
       "list-context.image-list#demo",
       "flex-layout.row#shelf",
       "list-context.image-list#promo--one",
-      "list-context.image-list#promo--two",
-      "newsletter"
+      "flex-layout.row#catalogo--one",
+      "newsletter#footer"
     ]
   },
 
@@ -34,6 +34,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
       "blockClass": "carousel"
     }
   },
@@ -59,7 +60,8 @@
       },
       "infinite": true,
       "fullWidth": false,
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
     }
   },
   "list-context.image-list#promo--one": {
@@ -76,24 +78,57 @@
       ]
     }
   },
+  "flex-layout.row#catalogo--one":{
+    "children": [
+      "image#catalogo--one",
+      "list-context.image-list#promo--two"
+    ],
+    "props": {
+      "blockClass": "catalogo--one"
+    }
+  },
   "slider-layout#promo--one": {
     "props": {
       "itemsPerPage": {
-        "desktop": 1,
+        "desktop": 2,
         "tablet": 1,
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false
+      "fullWidth": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always"
     }
   },
   "list-context.image-list#promo--two": {
+    "children": ["slider-layout#promo--one"],
     "props": {
+      "height": 400,
       "images": [
         {
-          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/801f6c18-3bbf-4455-9b2d-37ec20d53a7d___3cb2befba82351d3256ce8d85d4e7cd6.jpg"
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/1f0b62ef-390e-421f-971e-2c9153100716___1590a8ee60ba6e3720af537ed4a3f2a0.jpg"
+        },
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/5ac043f5-7ef4-4627-a494-fe08a701759e___48363ba0b0bccbe7c9b7a9e488648d7a.jpg"
+        },
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/bf6ce918-efda-489d-933c-47eb8101fd00___cbd445f4eff0c8f65e4ece16b8c96cf9.jpg"
+        },
+        {
+          "image": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/3697e960-f985-4cfa-ba91-5daf71a5a1aa___bc13a7384e3bc9359b2fd206da4bb69b.jpg"
         }
       ]
+    }
+  },
+  "image#catalogo--one": {
+    "props": {
+      "src": "https://olimpica.vtexassets.com/assets/vtex.file-manager-graphql/images/801f6c18-3bbf-4455-9b2d-37ec20d53a7d___3cb2befba82351d3256ce8d85d4e7cd6.jpg"
+    }
+  },
+  "newsletter#footer": {
+    "props": {
+      "placeholder": "Escribe tu email",
+      "label": "Nuestro boletín de ofertas"
     }
   }
 }

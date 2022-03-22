@@ -6,3 +6,22 @@
     border-radius: 10px;
     margin: 10px;
 }
+
+:global(.vtex-flex-layout-0-x-flexRow--catalogo--one) {
+    background: #fff !important;
+    padding: 10px !important;
+}
+
+:global(.vtex-store-components-3-x-form) {
+    display: flex;
+    color: #fff !important;
+    max-width: 60rem;
+}
+
+:global(.vtex-store-components-3-x-newsletter) {
+    background-color: #5b696f !important;
+}
+
+:global(.vtex-store-components-3-x-inputGroup) {
+    padding-top: 0 !important;
+}
