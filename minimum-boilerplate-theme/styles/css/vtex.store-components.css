@@ -10,3 +10,7 @@
 .vtex-store-footer-2-x-footerLayout :global(.vtex-rich-text-0-x-wrapper) {
     font-size: 12px !important;
 }
+
+.flex-grow-1 :global(.vtex-store-components-3-x-container) {
+    background: #fff !important;
+}
